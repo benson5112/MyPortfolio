@@ -2,10 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Link to CSS file -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">My Portfolio</h2>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Yi Yan Ho</span></h1>
+      <h3>Computer Science Student | AI / Software Development / XR</h3>
+      <p>
+        I am learning web development and building projects to improve my technical skills.
+      </p>
+      <a href="#projects" class="button">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="section-text">
+      I am a college student studying computer science and learning how to build websites
+      using HTML, CSS, and programming concepts. During this course, I am creating projects
+      that help me develop real-world technical skills and better understand how web
+      applications are designed and built.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="label">Coming Soon</span>
+        <h3>Course Project 1</h3>
+        <p>
+          A future web development project that will demonstrate my HTML and CSS skills.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <span class="label">Coming Soon</span>
+        <h3>Course Project 2</h3>
+        <p>
+          A future project where I will practice layout, design, and responsive web pages.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <span class="label">Coming Soon</span>
+        <h3>Course Project 3</h3>
+        <p>
+          A project that will help me build more real-world development experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: yho5@terpmail.umd.edu</p>
+    <p>LinkedIn: linkedin.com/in/yi-yan-ho</p>
+    <p>GitHub: github.com/benson5112</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Yi Yan Ho. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

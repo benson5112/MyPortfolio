@@ -15,28 +15,31 @@
   >
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <h2 class="logo">Yi Yan Ho</h2>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="nav-brand">
+        <span class="logo">Yi Yan Ho</span>
+      </div>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-navigation">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Projects / Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#seasonal-picks">Seasonal Picks</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About Fran</a></li>
       </ul>
     </nav>
   </header>
 
+  <main id="main-content">
+
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <!-- Profile Photo Placeholder -->
+  <section id="home" class="hero section">
     <div class="profile-card">
-      <!-- Replace images/profile.jpg with your own profile picture file -->
       <img src="./img/image.png" alt="Profile photo of Yi Yan Ho">
     </div>
 
@@ -54,10 +57,10 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p class="section-text">
-      I am a college student studying computer science and learning how to build websites
-      using HTML, CSS, and programming concepts. During this course, I am creating projects
-      that help me develop real-world technical skills and better understand how web
-      applications are designed and built.
+      I am a college student studying computer science and learning how to build websites using HTML, CSS, and programming concepts. I enjoy creating digital experiences that are clean, accessible, and easy to use.
+    </p>
+    <p class="section-text">
+      This portfolio highlights my learning journey, from web design basics to responsive, polished layouts that work well on every screen.
     </p>
   </section>
 
@@ -174,7 +177,7 @@
 
   <!-- Projects Section -->
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2>Projects / Services</h2>
 
     <div class="projects-grid">
       <div class="project-card">
@@ -203,41 +206,95 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials">
+    <h2>Testimonials</h2>
+    <p class="section-text">Sample feedback about the website's design and user experience.</p>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <p class="quote">"This portfolio is easy to read, professional, and responsive on different screen sizes. The design feels clean, modern, and well organized."</p>
+        <p class="author">— Sample Website Visitor</p>
+      </article>
+      <article class="testimonial-card">
+        <p class="quote">"The layout feels welcoming and simple to navigate. It makes the main information easy to find without feeling crowded."</p>
+        <p class="author">— Sample Peer Reviewer</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Seasonal Picks Section -->
+  <section id="seasonal-picks" class="section seasonal-picks">
+    <div class="seasonal-copy">
+      <h2>Seasonal Picks</h2>
+      <p class="section-text">This seasonal bouquet inspired the homepage palette. Soft blue highlights and deep, calm backgrounds create an elegant design that works well on every device.</p>
+      <ul class="seasonal-list">
+        <li>Clear contrast and readable text for strong accessibility.</li>
+        <li>Responsive layout that looks polished on mobile and desktop.</li>
+        <li>Balanced styling that supports both skills and storytelling.</li>
+      </ul>
+    </div>
+    <div class="seasonal-image-card">
+      <img src="./img/laptop.jpg" alt="Desk scene with laptop and design tools representing seasonal inspiration" />
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <h2>Contact Me</h2>
-
+    <p class="section-text">Reach out for collaboration, mentorship, or questions about my web design work.</p>
     <div class="contact-info">
       <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         <div>
           <h3>Email</h3>
-          <p>yho5@terpmail.umd.edu</p>
+          <p><a href="mailto:yho5@terpmail.umd.edu">yho5@terpmail.umd.edu</a></p>
         </div>
       </div>
-
       <div class="contact-item">
-        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
         <div>
           <h3>LinkedIn</h3>
-          <p>www.linkedin.com/in/yi-yan-ho</p>
+          <p><a href="https://www.linkedin.com/in/yi-yan-ho" target="_blank" rel="noopener noreferrer">linkedin.com/in/yi-yan-ho</a></p>
         </div>
       </div>
-
       <div class="contact-item">
-        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
         <div>
           <h3>GitHub</h3>
-          <p>github.com/benson5112</p>
+          <p><a href="https://github.com/benson5112" target="_blank" rel="noopener noreferrer">github.com/benson5112</a></p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Yi Yan Ho. All rights reserved.</p>
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Yi Yan Ho</p>
+        <p>Polished portfolio design for a student web developer.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#seasonal-picks">Seasonal Picks</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About Fran</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:yho5@terpmail.umd.edu">yho5@terpmail.umd.edu</a></p>
+        <p><a href="https://www.linkedin.com/in/yi-yan-ho" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p><a href="https://github.com/benson5112" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      </div>
+    </div>
+    <p class="footer-note">&copy; 2026 Yi Yan Ho. All rights reserved.</p>
   </footer>
-
+</main>
 </body>
 </html>

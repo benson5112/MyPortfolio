@@ -17,69 +17,41 @@ body {
 }
 
 /* Navigation bar */
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: -999px;
-  background: #0f172a;
-  color: #ffffff;
-  padding: 10px 18px;
-  z-index: 150;
-}
-
-.skip-link:focus {
-  left: 20px;
-  top: 20px;
-}
-
 header {
   background-color: #111827;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .navbar {
   max-width: 1100px;
   margin: auto;
-  padding: 16px 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
-.nav-brand .logo {
+.logo {
   color: #38bdf8;
   font-size: 24px;
-  font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 18px;
 }
 
 .nav-links a {
   color: #e5e7eb;
   text-decoration: none;
-  font-weight: 600;
-  padding: 8px 10px;
-  border-radius: 10px;
+  font-weight: bold;
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible {
-  background-color: rgba(56, 189, 248, 0.14);
-  color: #7dd3fc;
-  outline: none;
-}
-
-.nav-links a:focus-visible {
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.4);
+.nav-links a:hover {
+  color: #38bdf8;
 }
 
 /* Hero section */
@@ -125,26 +97,6 @@ header {
   margin-bottom: 28px;
 }
 
-.button {
-  display: inline-block;
-  background-color: #38bdf8;
-  color: #0f172a;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.button:hover,
-.button:focus-visible {
-  background-color: #7dd3fc;
-}
-
-.button:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.55);
-  outline-offset: 4px;
-}
-
 /* Profile photo area */
 .profile-card img {
   width: 200px;
@@ -185,152 +137,16 @@ header {
 
 .section h2 {
   font-size: 32px;
-  color: #7dd3fc;
+  color: #38bdf8;
   margin-bottom: 24px;
   text-align: center;
 }
 
 .section-text {
   max-width: 800px;
-  margin: 0 auto 24px;
+  margin: auto;
   text-align: center;
   color: #cbd5e1;
-  line-height: 1.8;
-}
-
-.testimonial-grid,
-.projects-grid,
-.skills-grid,
-.experience-list {
-  display: grid;
-  gap: 20px;
-}
-
-.testimonial-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.testimonial-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 18px;
-  padding: 28px;
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.quote {
-  color: #d1d5db;
-  font-size: 18px;
-  margin-bottom: 18px;
-}
-
-.author {
-  color: #94a3b8;
-  font-weight: 700;
-}
-
-.seasonal-picks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.seasonal-copy {
-  max-width: 560px;
-}
-
-.seasonal-list {
-  margin-top: 18px;
-  list-style: none;
-  display: grid;
-  gap: 10px;
-  padding-left: 0;
-}
-
-.seasonal-list li {
-  position: relative;
-  padding-left: 24px;
-  color: #cbd5e1;
-}
-
-.seasonal-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #38bdf8;
-}
-
-.seasonal-image-card img {
-  width: 100%;
-  display: block;
-  border-radius: 24px;
-  border: 1px solid #334155;
-}
-
-.about-fran-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.about-fran-grid .profile-card img {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  border-radius: 28px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  padding-bottom: 24px;
-}
-
-.footer-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.footer-links {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-.footer-links a,
-.site-footer p a {
-  color: #cbd5e1;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.site-footer p a:hover,
-.footer-links a:focus-visible {
-  color: #7dd3fc;
-}
-
-.site-footer {
-  background-color: #111827;
-  color: #94a3b8;
-  padding: 40px 20px;
-}
-
-.footer-note {
-  text-align: center;
-  color: #94a3b8;
-  margin-top: 20px;
 }
 
 /* Skills section */
@@ -479,17 +295,6 @@ header {
   overflow-wrap: anywhere;
 }
 
-.contact-item p a {
-  color: #fbbf24;
-  text-decoration: none;
-}
-
-.contact-item p a:hover,
-.contact-item p a:focus-visible {
-  color: #fcd34d;
-  text-decoration: underline;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -518,16 +323,8 @@ footer {
     font-size: 36px;
   }
 
-  .testimonial-grid,
-  .skills-grid,
-  .projects-grid,
-  .seasonal-picks,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .seasonal-picks {
-    gap: 24px;
+  .hero h3 {
+    font-size: 18px;
   }
 
   .skills-grid,

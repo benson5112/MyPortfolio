@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yi Yan Ho | Portfolio</title>
+  <script src="script.js"></script>
 
   <!-- Link to CSS file -->
   <link rel="stylesheet" href="style.css">
@@ -19,15 +20,18 @@
   <!-- Navigation Bar -->
   <header>
     <nav class="navbar">
-      <h2 class="logo">Yi Yan Ho</h2>
-
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -38,63 +42,48 @@
     <div class="profile-card">
       <!-- Replace images/profile.jpg with your own profile picture file -->
       <img src="./img/image.png" alt="Profile photo of Yi Yan Ho">
+
+      <div class="profile-socials" aria-label="Social profile links">
+        <a
+          class="social-icon-button"
+          href="https://github.com/benson5112"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Yi Yan Ho's GitHub profile"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+
+        <a
+          class="social-icon-button"
+          href="REPLACE_WITH_MY_LINKEDIN_URL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Yi Yan Ho's LinkedIn profile"
+        >
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+
+        <a
+          class="social-icon-button"
+          href="REPLACE_WITH_MY_RESUME_PDF_PATH"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Yi Yan Ho's resume"
+        >
+          <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
 
     <div class="hero-content">
-      <h1>Hello, I'm <span>Yi Yan Ho</span></h1>
-      <h3>Computer Science Student | AI / Software Development / XR</h3>
-      <p>
-        I am learning web development and building projects to improve my technical skills.
+      <h1>Hi, I'm <span>Yi Yan Ho</span></h1>
+      <h3>Computer Science Student @ University of Maryland</h3>
+      <p class="hero-description">
+        <span>Passionate about Software Engineering and AI.</span>
+        <span>I enjoy building practical applications and turning ideas into real products.</span>
       </p>
       <a href="#projects" class="button">View My Projects</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p class="section-text">
-      I am a college student studying computer science and learning how to build websites
-      using HTML, CSS, and programming concepts. During this course, I am creating projects
-      that help me develop real-world technical skills and better understand how web
-      applications are designed and built.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>My Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <i class="fa-brands fa-html5"></i>
-        <h3>HTML</h3>
-      </div>
-
-      <div class="skill-card">
-        <i class="fa-brands fa-css3-alt"></i>
-        <h3>CSS</h3>
-      </div>
-
-      <div class="skill-card">
-        <i class="fa-brands fa-js"></i>
-        <h3>JavaScript</h3>
-      </div>
-
-      <div class="skill-card">
-        <i class="fa-brands fa-python"></i>
-        <h3>Python</h3>
-      </div>
-
-      <div class="skill-card">
-        <i class="fa-brands fa-java"></i>
-        <h3>Java</h3>
-      </div>
-
-      <div class="skill-card">
-        <i class="fa-brands fa-github"></i>
-        <h3>GitHub</h3>
-      </div>
     </div>
   </section>
 
@@ -120,7 +109,7 @@
       <div class="experience-card">
         <div class="experience-header">
           <div>
-            <h3>Backend Developer Intern</h3>
+            <h3>Backend AI Application Intern</h3>
             <p class="company">PolicyCON | United Kingdom, Remote</p>
           </div>
           <p class="date">Sep 2025 - Mar 2026</p>
@@ -177,29 +166,120 @@
     <h2>Projects</h2>
 
     <div class="projects-grid">
-      <div class="project-card">
-        <span class="label">Coming Soon</span>
-        <h3>Course Project 1</h3>
+      <a
+        class="project-card"
+        href="https://benson5112.github.io/AI_ChatBot/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View AI Beauty Chatbot project on GitHub"
+      >
+        <img class="project-image" src="./img/Chatbot.png" alt="AI Beauty Chatbot project preview">
+        <h3>AI Beauty Chatbot</h3>
         <p>
-          A future web development project that will demonstrate my HTML and CSS skills.
+          AI-powered chatbot that provides personalized beauty recommendations using LLM integration, 
+          prompt engineering, and conversation management.
         </p>
+        <span class="learn-more">Learn More</span>
+      </a>
+
+      <a
+        class="project-card"
+        href="https://benson5112.github.io/NASA_App/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View NASA Space Explorer project on GitHub"
+      >
+        <img class="project-image" src="./img/NASA.png" alt="NASA Space Explorer project preview">
+        <h3>NASA Space Explorer</h3>
+        <p>
+          Interactive web application that retrieves and displays NASA’s Astronomy Picture of the Day 
+          using REST APIs with dynamic data fetching and error handling, asynchronous requests, 
+          and structured JSON processing.
+        </p>
+        <span class="learn-more">Learn More</span>
+      </a>
+
+      <a
+        class="project-card"
+        href="https://benson5112.github.io/ResurrectionW/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View Resurrection W project on GitHub"
+      >
+        <img class="project-image" src="./img/ResurrectionW.png" alt="Resurrection W project preview">
+        <h3>Resurrection W</h3>
+        <p>
+          Browser-based game featuring event-driven programming, game state management, 
+          scoring logic, and dynamic user interactions.
+        </p>
+        <span class="learn-more">Learn More</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
       </div>
 
-      <div class="project-card">
-        <span class="label">Coming Soon</span>
-        <h3>Course Project 2</h3>
-        <p>
-          A future project where I will practice layout, design, and responsive web pages.
-        </p>
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <ul>
+          <li>Django</li>
+          <li>Django REST Framework</li>
+          <li>REST API</li>
+          <li>OpenAI API</li>
+        </ul>
       </div>
 
-      <div class="project-card">
-        <span class="label">Coming Soon</span>
-        <h3>Course Project 3</h3>
-        <p>
-          A project that will help me build more real-world development experience.
-        </p>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Linux</li>
+        </ul>
       </div>
+
+      <div class="skill-card">
+        <h3>Core CS</h3>
+        <ul>
+          <li>Object-Oriented Programming</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="section-text">
+      <p>
+        I am a Computer Science student at the University of Maryland passionate about software engineering and AI. 
+        I enjoy solving challenging problems, writing clean and maintainable code, and building practical software 
+        that creates real-world impact. Through internships, research, and personal projects, I have developed a strong 
+        interest in designing reliable applications and continuously improving my engineering skills.
+      </p>
+
+      <p>
+        My experience includes developing RESTful APIs, integrating AI services, and building applications using Java, 
+        Python, C, JavaScript, Django, Django REST Framework, and the OpenAI API. I am currently seeking 
+        Software Engineering internship opportunities where I can contribute to meaningful projects, 
+        collaborate with experienced engineers, and continue growing as a software engineer.
+      </p>
     </div>
   </section>
 

@@ -1529,9 +1529,32 @@ footer {
     font-size: 18px;
   }
 
-  .skills-grid,
-  .projects-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 18vw 12px 0;
+  }
+
+  .projects-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects-grid .project-card {
+    flex: 0 0 82vw;
+    max-width: 420px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .experience-header {
@@ -1582,7 +1605,11 @@ footer {
     align-self: center;
   }
 
-  .projects-gallery--grid,
+  .projects-gallery--grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
   .projects-gallery--list {
     grid-template-columns: 1fr;
   }
@@ -1602,6 +1629,45 @@ footer {
   .projects-gallery--list .project-gallery-card__content {
     max-width: none;
     padding: 20px;
+  }
+
+  .projects-gallery--grid .project-gallery-card {
+    padding-bottom: 52px;
+  }
+
+  .projects-gallery--grid .project-gallery-card__content {
+    gap: 9px;
+    padding: 14px;
+  }
+
+  .projects-gallery--grid .project-gallery-card__title {
+    font-size: 17px;
+  }
+
+  .projects-gallery--grid .project-gallery-card__summary {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .projects-gallery--grid .project-tags {
+    gap: 5px;
+    margin-top: 0;
+  }
+
+  .projects-gallery--grid .project-tags span {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .projects-gallery--grid .project-gallery-card__indicator {
+    right: 14px;
+    bottom: 14px;
+    padding: 6px 9px;
+    font-size: 12px;
   }
 
   .project-modal {
@@ -1631,6 +1697,12 @@ footer {
   .modal-action-button {
     width: 100%;
     min-height: 44px;
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-gallery--grid {
+    grid-template-columns: 1fr;
   }
 }
 

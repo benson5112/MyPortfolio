@@ -3,7 +3,7 @@
 
   const projects = [
     {
-      title: 'AI Beauty Chatbot',
+      title: 'L’Oréal AI Beauty Chatbot',
       summary: 'AI-powered chatbot that provides personalized beauty recommendations using LLM integration, prompt engineering, and conversation management.',
       tags: ['AI Project', 'LLM Integration'],
       thumbnail: './img/Chatbot.png',
@@ -168,10 +168,9 @@
         ${renderScreenshots(project)}
       </section>
       <section>
-        <h3>GitHub Repository</h3>
-        <div class="project-modal__actions">
-          <a class="modal-action-button" href="${escapeHtml(project.githubUrl)}" target="_blank" rel="noopener noreferrer">View GitHub Repository ↗</a>
-          ${project.liveUrl ? `<a class="modal-action-button modal-action-button--secondary" href="${escapeHtml(project.liveUrl)}" target="_blank" rel="noopener noreferrer">View Live Project ↗</a>` : ''}
+        <div class="project-modal__actions${project.liveUrl ? '' : ' project-modal__actions--single'}">
+          ${project.liveUrl ? `<a class="modal-action-button modal-action-button--primary" href="${escapeHtml(project.liveUrl)}" target="_blank" rel="noopener noreferrer">View Demo ↗</a>` : ''}
+          <a class="modal-action-button modal-action-button--secondary" href="${escapeHtml(project.githubUrl)}" target="_blank" rel="noopener noreferrer">View Repo ↗</a>
         </div>
       </section>
     `;

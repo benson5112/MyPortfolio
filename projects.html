@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Projects | Yi Yan Ho</title>
+  <script>
+    (function () {
+      if (localStorage.getItem('portfolio-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+</head>
+<body class="projects-page">
+
+  <header>
+    <nav class="navbar" aria-label="Primary navigation">
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-page-hero" aria-labelledby="all-projects-title">
+      <a class="back-home-link" href="index.html#projects">← Back to featured projects</a>
+      <h1 id="all-projects-title">All Projects</h1>
+      <p>A collection of software, AI, API, and interactive projects I have built.</p>
+    </section>
+
+    <section class="section projects-listing" aria-labelledby="projects-gallery-title">
+      <div class="projects-toolbar">
+        <div>
+          <h2 id="projects-gallery-title">Project Gallery</h2>
+          <p>Choose a project to view implementation details, screenshots, and repository links.</p>
+        </div>
+
+        <div class="project-layout-controls" aria-label="Project layout controls">
+          <button class="layout-toggle" type="button" data-layout="list" aria-label="Show projects in one column" aria-pressed="false">
+            <i class="fa-solid fa-table-list" aria-hidden="true"></i>
+          </button>
+          <button class="layout-toggle" type="button" data-layout="grid" aria-label="Show projects in three columns" aria-pressed="true">
+            <i class="fa-solid fa-grip" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-gallery projects-gallery--grid" data-projects-gallery></div>
+    </section>
+  </main>
+
+  <dialog class="project-modal" aria-labelledby="project-modal-title" data-project-modal>
+    <div class="project-modal__panel">
+      <div class="project-modal__header">
+        <div>
+          <div class="project-tags project-modal__tags" data-modal-tags></div>
+          <h2 id="project-modal-title" data-modal-title></h2>
+        </div>
+        <button class="project-modal__close" type="button" aria-label="Close project details" data-modal-close>
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="project-modal__body" data-modal-body></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 Yi Yan Ho. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1039,7 +1039,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  min-height: 0;
   padding: 0 0 62px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -1648,6 +1648,8 @@ footer {
   .projects-gallery--grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+    align-items: start;
+    grid-auto-rows: auto;
   }
 
   .projects-gallery--list {
@@ -1672,11 +1674,31 @@ footer {
   }
 
   .projects-gallery--grid .project-gallery-card {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    height: auto;
+    min-height: 0;
+    max-height: none;
     padding-bottom: 52px;
   }
 
+  .projects-gallery--grid .project-gallery-card__media {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
   .projects-gallery--grid .project-gallery-card__content {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
     gap: 9px;
+    height: auto;
+    min-height: 0;
+    max-height: none;
     padding: 14px;
   }
 

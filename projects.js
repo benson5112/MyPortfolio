@@ -135,8 +135,8 @@
 
   function setLayout(layout) {
     const nextLayout = layout === 'list' ? 'list' : 'grid';
-    gallery.classList.toggle('projects-gallery--list', nextLayout === 'list');
-    gallery.classList.toggle('projects-gallery--grid', nextLayout === 'grid');
+    gallery.classList.remove('projects-gallery--list', 'projects-gallery--grid');
+    gallery.classList.add(nextLayout === 'list' ? 'projects-gallery--list' : 'projects-gallery--grid');
     layoutButtons.forEach((button) => {
       button.setAttribute('aria-pressed', String(button.dataset.layout === nextLayout));
     });
